@@ -83,7 +83,9 @@ function Translator() {
       >
         {languages.map((item) =>
           Object.entries(item).map(([key, value]) => (
-            <Select.Option value={key}>{value}</Select.Option>
+            <Select.Option value={key} key={key}>
+              {value}
+            </Select.Option>
           ))
         )}
       </Select>
